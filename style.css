@@ -1,0 +1,224 @@
+/*-------- Font --------*/
+
+@font-face {
+    font-family: 'odin-font'; 
+    src: url('norse-bold.otf') format('opentype'); 
+}
+
+/*-------- Global --------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Verdana", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*-------- Background --------*/
+
+.black-background {
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------- Main Left Card --------*/
+
+
+.main-card {
+    display: flex;
+    width: 75vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #b4b4b4;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/*-------- Image and Logo --------*/
+
+.sidebar {
+    flex: 2;
+    max-width: 50%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 54px;
+    color: white;
+}
+
+.logo span {
+    font-family: 'odin-font', sans-serif;
+    font-size: 80px;
+}
+
+.logo img {
+    height: 120px;
+}
+
+/*-------- Main Right Card --------*/
+
+.content-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.top-text {
+    position: absolute;
+    margin: 0px 280px;
+    top: 10px;
+    color: white; 
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.top-text a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-text {
+    position: absolute;
+    margin: 0px 100px;
+    top: 225px;
+    color: rgb(255, 255, 255); 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/*-------- Form --------*/
+
+form {
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 20px 0;
+    margin-top: 80px;
+    box-shadow: 0.5px 0px 15px rgb(85, 85, 85);
+    z-index: 2;
+}
+
+form h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form-rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+/*-------- Input --------*/
+
+input {
+  width: 250px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 0.25em;
+  border: 0.5px solid #999999;
+  background-color: rgba(255, 160, 102, 0.05);
+}
+
+input:invalid:focus {
+  outline: none;
+  border: 1.5px solid red;
+}
+
+input:valid:focus {
+  outline: none;
+  border: 0.5px solid blue;
+  box-shadow: 0.5px 0.5px 5px gray;
+}
+
+input:valid {
+  outline: none;
+  border: 1px solid green;
+}
+
+
+/*-------- Button --------*/
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 7px rgb(0, 0, 0);
+}
+
+
+/*-------- Footer --------*/
+
+.footer-area {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.login-footer {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.img_credits {
+    display: flex;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin: 620px 0;
+}
+
+.img_credits a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 15px;   
+    color: white; 
+    font-size: 15px;
+    font-weight: bold;
+}

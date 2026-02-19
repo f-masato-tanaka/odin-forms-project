@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Form Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="black-background">
+        <div class="main-card">
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="logo.png" alt="Odin Logo">
+                    <span class="odin-text">Car Shop</span>
+                </div>
+                <div class="img_credits">
+                    <span class="cred-text">Image by Devon Janse van Rensburg on <a href="https://unsplash.com/pt-br/@huntleytography">unsplash</a></span>
+                </div>
+            </div>
+            <div class="content-right">
+              <span class="top-text">Code: <a href="https://github.com/f-masato-tanaka">Fernando Tanaka</a></span>
+              <p class="header-text">Create an account to choose your car</p>
+                <form id="signup-form">
+                    <h2>Let's start!</h2>
+                    <div class="form-rows">
+                      <p>
+                        <label for="f_name">First Name*</label>
+                        <input type="text" id="f_name" name="username" required />
+                      </p>
+                      <p>
+                        <label for="l_name">Last Name*</label>
+                        <input type="text" id="l_name" name="username" required />
+                      </p>
+                      <p>
+                        <label for="dob">Data of Birth*</label>
+                        <input type="date" id="dob" name="dob" required>
+                      </p>
+                      <p>
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone_number" placeholder="(XX) XXXXX-XXXX" required>
+                      </p>
+                      <p>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="youremail@email.com" required />
+                      </p>
+                      <p>
+                        <label for="pass">Password*</label>
+                        <input type="password" id="pass" name="pass" required />
+                      </p>
+                    </div>
+                </form>
+                <div class="footer-area">
+                    <button type="submit" form="signup-form">Create Account</button>
+                    <p class="login-footer">Already have an account? <a href="#">Log in</a></p>
+                    <p class="footer-text">This form is part of my learning path to JavaScript with The Odin Project. None of the information here is real!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
